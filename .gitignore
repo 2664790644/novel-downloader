@@ -28,6 +28,14 @@ docs/ui-prototypes/
 archive*.tar.gz
 tools/*.png
 
+# README 配图需要入库，单独放行（上面 tools/*.png 只针对 tools 目录）
+!docs/screenshots/*.png
+
+# 一次性演示/截图辅助脚本（含本地临时环境路径，不入库）
+tools/_readme-shots.js
+tools/_demo-source.json
+tools/_probe_*.json
+
 # === 工作区内部数据（记忆 / 临时文件 / 会话数据）===
 .workbuddy/
 
