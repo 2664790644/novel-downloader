@@ -1,0 +1,32 @@
+{
+  "name": "novel-downloader-demo",
+  "version": "1.0.0",
+  "description": "学习用途的小说下载工作台（书源驱动 + 并发池 + EPUB 导出），含本地模拟站",
+  "main": "web-ui.js",
+  "bin": "web-ui.js",
+  "scripts": {
+    "start": "node web-ui.js",
+    "build:table": "node gen-gbk-table.js",
+    "build": "node node_modules/@yao-pkg/pkg/lib-es5/bin.js . --output dist/novel-downloader.exe",
+    "build:exe": "node node_modules/@yao-pkg/pkg/lib-es5/bin.js . --output dist/novel-downloader.exe",
+    "cli": "node novel-downloader.js",
+    "test": "node --test test/engine.test.js"
+  },
+  "pkg": {
+    "assets": [
+      "web-ui.html",
+      "book-source.json",
+      "gbk-table.json",
+      "book_sources/*.json",
+      "assets/*.jpg"
+    ],
+    "outputPath": "dist"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^5.11.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

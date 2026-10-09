@@ -1,0 +1,52 @@
+# === 依赖 ===
+node_modules/
+
+# === 构建产物 ===
+dist/
+*.exe
+
+# === 运行时数据（本地书架 / 下载结果 / 缓存） ===
+output/
+backup/
+*.log
+crash.log
+
+# === 用户书源（含第三方站点规则，不入库） ===
+user-book-sources.json
+user-book-sources.json.bak-*
+book_sources/
+book-source.json
+source-health.json
+
+# === 大体积生成物（可由 npm run build:table 重新生成） ===
+# gbk-table.json 保留：pkg 打包必需，且体积仅 324K
+
+# === 原型 / 备份 / 研究临时产物 ===
+web-ui.html.bak-*
+docs/ui-prototypes/
+*remote.json
+archive*.tar.gz
+tools/*.png
+
+# === 工作区内部数据（记忆 / 临时文件 / 会话数据）===
+.workbuddy/
+
+# === 书源研究临时产物（含真实站点探测结果）===
+tools/_probe_*.json
+tools/*-20261008.js
+tools/*-20261009.js
+tools/*-20261009b.js
+tools/probe-*.js
+tools/merge-*.js
+tools/repair-*.js
+tools/retest-*.js
+tools/analyze-*.js
+tools/build-candidate-*.js
+tools/source-*.js
+tools/site-probe-*.js
+
+# === 编辑器 / 系统 ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
