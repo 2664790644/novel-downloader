@@ -53,6 +53,16 @@ tools/build-candidate-*.js
 tools/source-*.js
 tools/site-probe-*.js
 
+# === 内部开发过程文档（不随仓库公开）===
+# 方案 / 报告 / 评审 / QA 等内部记录，仅本地留存
+上线方案-v6.md
+书源扩充报告-*.md
+审查报告-*.md
+设计评审-*.md
+评估报告-*.md
+迭代方案-*.md
+QA报告-*.md
+
 # === 编辑器 / 系统 ===
 .vscode/
 .idea/
